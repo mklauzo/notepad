@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `attachments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
--- 1. Tworzymy tabelę użytkowników  Hasło dla domyślnego użytkownika admin to: admin123
+-- 1. Tworzymy tabelę użytkowników  Hasło dla domyślnego użytkownika admin to: admin123#
 CREATE TABLE IF NOT EXISTS `users` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(50) NOT NULL UNIQUE,
