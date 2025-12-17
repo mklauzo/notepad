@@ -29,7 +29,7 @@ try {
             PRIMARY KEY (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
         
-        $hash = password_hash('admin123', PASSWORD_DEFAULT);
+        $hash = password_hash('admin123#', PASSWORD_DEFAULT);
         $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 'admin')")->execute([$hash]);
         try { $pdo->exec("ALTER TABLE notes ADD COLUMN user_id INT UNSIGNED NOT NULL DEFAULT 1"); } catch (Exception $e) {} 
     }
