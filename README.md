@@ -1,5 +1,5 @@
 Aplikacja do robienia notatek, można dodawać załączniki, wklejać zrzuty obrazu.
-
+Hasło dla domyślnego użytkownika admin to: admin123#
 
 Tworzenie bazy danych (część tabel uzupełnia plik index.php):
 ```
