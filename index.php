@@ -320,7 +320,7 @@ header { background: var(--primary); color: #fff; padding: 8px 15px; display: fl
 </div>
 <?php else: ?>
 <header>
-    <div style="font-weight:bold;">Notatki  ver. 2.9 MAC-ai</div>
+    <div style="font-weight:bold;">Notatki  ver. 2.9</div>
     <div style="display:flex; gap:10px; font-size:12px;">
         <span><?php echo $_SESSION['username']; ?></span>
         <?php if($_SESSION['role'] === 'admin'): ?>
